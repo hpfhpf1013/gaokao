@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>2017“过来人”高考</title>
+		<META name="viewport" id="viewport" content="minimal-ui,width=device-width,height=device-height,target-densitydpi=medium-dpi,initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wxin.js"></script>
+	</head>
+	<body>
+
+		<!--封面-->
+		<div class="main" id="main">
+			<div class="gk-input">
+				<div class="porel">
+					<div class="mask" id="mask" style="display: none"></div>
+					<div class="mask2" id="mask2" style="display: none"></div>
+				</div>
+				<div class="inpuk">
+					<input type="text" name="" id="name" value="" autofocus="autofocus" maxlength="4"/>	
+				</div>
+			</div>
+			<div class="gk-btn" id="start"></div>
+			<div class="gk-logo"></div>
+		</div>
+
+		<!--第1题-->
+		<div class="main main2" style="display: none" id="1">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n1"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z1"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>1/6 语文题（文化人都会题）,150分</h1>
+					<h3>以下哪个成语解释是正确的： </h3>	
+					<ul>
+						<!--class为right  选中效果-->
+						<li id="11"><span>A</span>人生苦短：人生最痛苦的是就是腿短<i></i></li>
+						<li id="12"><span>B</span>穷胸极饿：平胸的妹子特别容易饿<i></i></li>
+						<li id="13"><span>C</span>绝处逢生：形容在走投无路的情况下找到希望<i></i></li>
+						<li id="14"><span>D</span>天生励志：形容某人长相丑陋，只能靠努力学习改变命运<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi1">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-next2" id="101"></div>
+				<!--<div class="gk-save"></div>-->
+			</div>
+		</div>
+
+		<!--第2题-->
+		<div class="main main2" style="display: none" id="2">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n2"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z2"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>2/6 数学题（智商分水岭）,150分</h1>
+					<h3>哪个公式是形容如下表情的：</h3>
+					<!--题目图片-->
+					<img src="img/face.png"/>
+					<ul class="ibl">
+						<li id="21"><span>A：</span>tan90°<i></i></li>
+						<li id="22"><span>B：</span>sin90°<i></i></li>
+						<li id="23"><span>C：</span>cos90°<i></i></li>
+						<li id="24"><span>D：</span>cot90°<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi2">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-last" id="102"></div>
+				<div class="gk-next" id="102"></div>
+				<!-- 提交-->
+				<!--<div class="gk-save"></div>-->
+			</div>
+		</div>
+
+
+		<!--第三题-->
+		<div class="main main2" style="display: none" id="3">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n3"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z3"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>3/6、英语题（出门必备题），150分</h1>
+					<h3>以下汉英翻译正确的是：</h3>	
+					<ul>
+						<!--class为right  选中效果-->
+						<li id="31"><span>A：</span>金碧辉煌的宫殿  big house buling buling<i></i></li>
+						<li id="32"><span>B：</span>国宝 country  baby<i></i></li>
+						<li id="33"><span>C：</span>麻婆豆腐  Ma po tofu<i></i></li>
+						<li id="34"><span>D：</span>皇帝 the boss of China<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi3">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-last" id="103"></div>
+				<div class="gk-next" id="103"></div>
+			</div>
+		</div>
+
+		<!--第四题-->
+		<div class="main main2" style="display: none" id="4">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n4"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z4"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>4/6、文综题（常识题），100分</h1>
+					<h3>东汉末年分三国，哪三国？</h3>	
+					<ul>
+						<li id="41"><span>A：</span>烽火、连天、不休<i></i></li>
+						<li id="42"><span>B：</span>魏、蜀、吴<i></i></li>
+						<li id="43"><span>C：</span>西汉、北汉、南汉<i></i></li>
+						<li id="44"><span>D：</span>齐、鲁、赵<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi4">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-last" id="104"></div>
+				<div class="gk-next" id="104"></div>
+			</div>
+		</div>
+
+		<!--第五题-->
+		<div class="main main2" style="display: none" id="5">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n5"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z5"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>5/6、理综题（只能靠猜题），100分</h1>
+					<h3>《水浒传》里，潘金莲使用砒霜毒死武大郎，请问砒霜的药物化学成分：</h3>	
+					<ul>
+						<!--class为right  选中效果-->
+						<li id="51"><span>A：</span>O2<i></i></li>
+						<li id="52"><span>B：</span>eLong<i></i></li>
+						<li id="53"><span>C：</span>As2O3<i></i></li>
+						<li id="54"><span>D：</span>H2O<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi5">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-last" id="105"></div>
+				<div class="gk-next" id="105"></div>
+			</div>
+		</div>
+
+		<!--第六题-->
+		<div class="main main2" style="display: none" id="6">
+			<div class="row">
+				<div class="gk-info">
+					<div>
+						<label>姓　　名：</label><div class="info" id="n6"></div>	
+					</div>
+					<div>
+						<label>准考证号：</label><div class="info" id="z6"></div>
+					</div>
+				</div>
+				<div class="gk-anw">
+					<h1>6/6、加分题（送命题），100分</h1>
+					<h3>小明对女朋友说：“今天小花告诉我，微信钱包可以订酒店了”女朋友应如何回答？</h3>	
+					<ul>
+						<!--class为right  选中效果-->
+						<li id="61"><span>A：</span>微信钱包订酒店会更方便吗？<i></i></li>
+						<li id="62"><span>B：</span>微信钱包订酒店会更省吗？<i></i></li>
+						<li id="63"><span>C：</span>微信钱包能订酒店，我早就知道了！<i></i></li>
+						<li id="64"><span>D：</span>小花是谁！？<i></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottomfix">
+				<div class="porel" style="display: none" id="tishi6">
+					<div class="mask3">您还没有答题，请先选出你心中的答案哦~</div>
+					<div class="mask4"></div>
+				</div>
+				<div class="gk-last" id="106"></div>
+				<div class="gk-save"></div>
+			</div>
+		</div>
+
+		<!--loading-->
+		<div class="main3" style="background-color: #edd7bf;display:none" id="loading">
+			<div class="gk-load"></div>
+			<div class="gk-logo"></div>
+		</div>
+
+		<!--成绩单-->
+	<div class="pages" style="display: none" id="chengji">
+    <div class="page">
+        <div class="bg">
+        	<img src="" id="chengjidan"/>
+        </div>
+    </div>
+    <div class="banner-div">
+        <div class="continue"><img src="img/left.png" alt=""></div>
+        <div class="exit"><img src="img/right.png" alt=""></div>
+    </div>
+	</div>
+	</body>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9e6c92aceede302f82a1d07b6a5d1752";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</html>
